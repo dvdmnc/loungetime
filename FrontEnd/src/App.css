@@ -1,0 +1,130 @@
+@import 'tailwindcss/base'; 
+@import 'tailwindcss/components'; 
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Modak&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-monoton {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-dancingScript {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.custom-transition{
+  transition: all ease-in-out 0.3s;
+  }
+
+#GoToTop{
+  position: fixed;
+  right: 1%;
+  bottom:1%;
+  z-index: 10;
+  background-color: white;
+}
+
+.scroll-horizontal-normal{
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+.scroll-horizontal-delay{
+  animation: scroll-horizontal 30s linear infinite;
+  animation-delay: 15s;
+}
+
+.infinite-horizontal:hover{
+    .scroll-horizontal-delay{
+      animation-play-state: paused;
+  }
+  .scroll-horizontal-normal{
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-horizontal{
+  0%{
+    left:100%
+  }
+  100%{
+    left:-100%
+  }
+}
+
+.font-IBM{
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.musician-container{
+  align-items: center;
+}
+
+.musician-text{
+  text-align: justify;
+}
+
+@media(max-width:900px){
+  .musician-text{
+    max-height: 20vh;
+  overflow-y: scroll;
+  }
+}
+
+@media(max-width:700px){
+  .musician-text{
+    max-height: 8vh;
+  overflow-y: scroll;
+  }
+}
+
+.font-modak {
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-gold{
+  background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+#contact{
+  border-radius: 20px;
+  border: 3px solid white;
+  position: absolute;
+  left: 20vw;
+  width: 60vw;
+  height: auto;
+}
+
+#contact-container{
+  align-items: center;
+}
+
+.grid-field{
+  position: relative;
+}
