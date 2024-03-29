@@ -7,6 +7,7 @@ import Robinson from './pages/Robinson';
 import Photos from './pages/Photos';
 import Agenda from './pages/Agenda';
 import Contact from './pages/Contact';
+import VideosComp from './pages/VideosComp';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path='/photos' element={<Photos />} />
       <Route path='/agenda' element={<Agenda />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/videos' element={<VideosComp />} />
     </Routes>
   );
 }

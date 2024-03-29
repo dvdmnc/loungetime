@@ -49,7 +49,7 @@ function Accueil() {
           >{data.imgs[0].texte}</motion.h3>
         </motion.div>
       </div>
-        <InfiniteHorizontal  data={data}/>
+        <InfiniteHorizontal  data={data} bgcolor={'black'}/>
       <div className='relative text-center'>
       <motion.img 
         initial={{ opacity: 0}}

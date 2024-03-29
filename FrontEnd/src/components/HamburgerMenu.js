@@ -11,7 +11,7 @@ import Zoom from '@mui/material/Zoom';
 function HamburgerMenu({color}) {
   const [isOpen, setOpen] = useState(false);
 
-  const menu = [['ACCUEIL','/'],['LES MUSICIENS','/musiciens'],['MRS ROBINSON BAND','/mrs-robinson-band'],['PHOTOS','/photos'],['AGENDA','/agenda'],['VIDEOS COMPLEMENTAIRES','/'],['CONTACT','/contact']]
+  const menu = [['ACCUEIL','/'],['LES MUSICIENS','/musiciens'],['MRS ROBINSON BAND','/mrs-robinson-band'],['PHOTOS','/photos'],['AGENDA','/agenda'],['VIDEOS COMPLEMENTAIRES','/videos'],['CONTACT','/contact']]
 
   return (
     <ClickAwayListener onClickAway={() => {setOpen(false)}}>

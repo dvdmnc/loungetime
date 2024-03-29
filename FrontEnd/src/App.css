@@ -75,22 +75,14 @@ body{
   align-items: center;
 }
 
+@media(max-width:900px){
+  .musician-container{
+    border-top: 5px solid black;
+  }
+}
+
 .musician-text{
   text-align: justify;
-}
-
-@media(max-width:900px){
-  .musician-text{
-    max-height: 20vh;
-  overflow-y: scroll;
-  }
-}
-
-@media(max-width:700px){
-  .musician-text{
-    max-height: 8vh;
-  overflow-y: scroll;
-  }
 }
 
 .font-modak {
@@ -127,4 +119,11 @@ body{
 
 .grid-field{
   position: relative;
+}
+
+#Mansonry{
+  width: 90vw; 
+  height: 100vh; 
+  overflow-y: 'scroll'; 
+  margin-top:20vh; 
 }

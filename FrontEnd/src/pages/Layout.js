@@ -10,7 +10,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import HamburgerMenu from '../components/HamburgerMenu';
 
 const Layout = ({ children, color }) => {
-    const menu = [['ACCUEIL','/'],['LES MUSICIENS','/musiciens'],['MRS ROBINSON BAND','/mrs-robinson-band'],['PHOTOS','/photos'],['AGENDA','/agenda'],['VIDEOS COMPLEMENTAIRES','/'],['CONTACT','/contact']]
+    const menu = [['ACCUEIL','/'],['LES MUSICIENS','/musiciens'],['MRS ROBINSON BAND','/mrs-robinson-band'],['PHOTOS','/photos'],['AGENDA','/agenda'],['VIDEOS COMPLEMENTAIRES','/videos'],['CONTACT','/contact']]
 
     const [isFixed, setIsFixed] = useState(false);
     const [hasBackground, setHasBackground] = useState(false);

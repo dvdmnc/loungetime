@@ -4,7 +4,7 @@ import Layout from './Layout'
 
 import useFetch from '../components/Fetch'
 
-import QuiltedImageList from '../components/ImageList'
+import MasonryImageList from '../components/ImageList'
 
 function Photos() {
     const data = useFetch('/photos')
@@ -12,7 +12,7 @@ function Photos() {
     <Layout color={'black'}>
     {data ?
     <div className='flex items-center justify-center h-screen w-screen'>
-    <QuiltedImageList data={data} />
+    <MasonryImageList data={data} />
     </div>
     : null}
     </Layout>
