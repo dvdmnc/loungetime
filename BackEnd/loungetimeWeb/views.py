@@ -53,3 +53,8 @@ def contact(request):
     for dict in imgs:
         dict['url'] = request.build_absolute_uri(dict['url'].url)
     return Response(imgs)
+
+@api_view()
+def videos(request):
+    vids = [model_to_dict(v) for v in Videos.objects.filter(page='VIDEOS COMPLEMENTAIRES')]
+    return Response(vids)

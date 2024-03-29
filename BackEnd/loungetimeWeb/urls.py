@@ -9,5 +9,6 @@ urlpatterns = [
     path('mrs-robinson-band', views.robinson, name='robinson'),
     path('photos', views.photos, name='photos'),
     path('agenda', views.agenda, name='agenda'),
-    path('contact', views.contact, name='contact')
+    path('contact', views.contact, name='contact'),
+    path('videos', views.videos, name='videos')
 ]
