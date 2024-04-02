@@ -7,4 +7,4 @@ En utilisant Django REST en Back End connecté à une base de données, je donne
 ## Musiciens
 ![capture1](https://github.com/dvdmnc/loungetime/blob/main/loungetime-musiciens.PNG)
 ## Agenda
-![capture1](https://github.com/dvdmnc/loungetime/blob/main/loungetime-agenda.PNG)
+![capture1](https://github.com/dvdmnc/loungetime/blob/main/loungetime%20agenda.PNG)
