@@ -38,6 +38,7 @@ function Musiciens() {
                     variants={titleAnimation}
                     initial='hidden'
                     animate='show'
+                    className='pl-[2vw] pr-[2vw] md:pr-0'
                     >
                         <motion.h1 className='font-dancingScript text-4xl md:text-5xl xl:text-8xl mt-5 mb-5 text-center' variants={item}>{musicien.titre}</motion.h1>
                         <motion.p className='xl:text-xl text-base font-IBM' variants={item}>{musicien.texte}</motion.p>
@@ -64,6 +65,7 @@ function Musiciens() {
                         variants={titleAnimation}
                         initial='hidden'
                         animate='show'
+                        className='pr-[2vw] pl-[2vw] md:pl-0'
                         >
                             <motion.h1 className='font-dancingScript text-4xl md:text-5xl xl:text-8xl mt-5 mb-5 text-center' variants={item}>{musicien.titre}</motion.h1>
                             <motion.p className='xl:text-xl text-base font-IBM' variants={item}>{musicien.texte}</motion.p>
