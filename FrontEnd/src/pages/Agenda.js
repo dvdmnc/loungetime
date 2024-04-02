@@ -17,7 +17,9 @@ function Agenda() {
             <h1 className='poppins-bold text-5xl text-center text-gold mb-5'>{année[0]}</h1>
             <ul className='font-IBM text-sm sm:text-lg md:text-xl'>
                 {année[1].map((date) => (
-                    <div key={date.jour} className='flex items-center justify-center'><img src={Guitar} alt='guitar-icon' /><li>Le {date.jour} {date.mois} à {date.heure}h, {date.titre}</li></div>
+                    <li key={date.jour} className='mb-[2vh]'>
+                    <div className='flex items-center sm:ml-[15vw] '><img src={Guitar} alt='guitar-icon' /><b>{date.jour} {date.mois} à {date.heure}h</b>: {date.titre}</div>
+                    </li>
                 ))}
             </ul>
         </div>
@@ -25,9 +27,11 @@ function Agenda() {
     {previousYears && Object.entries(previousYears).reverse().map((année) =>(
         <div key={année[0]} className='mt-[12vh] mb-8'>
             <h1 className='poppins-bold text-5xl text-center text-gold mb-5'>{année[0]}</h1>
-            <ul className='font-IBM text-sm sm:text-lg md:text-xl'>
+            <ul className='font-IBM text-sm sm:text-lg md:text-xl '>
                 {année[1].map((date,index) => (
-                    <div key={`date${index}de${année[0]}`} className='flex items-center justify-center'><img src={Guitar} alt='guitar-icon' /><li>{date}</li></div>
+                    <li key={`date${index}de${année[0]}`} className='mb-[2vh]'>
+                    <div className='flex items-center sm:ml-[15vw]'><img src={Guitar} alt='guitar-icon' /><b>{date.split(':')[0]}</b> : {date.split(':').slice(1)}</div>
+                    </li>
                 ))}
             </ul>
         </div>
